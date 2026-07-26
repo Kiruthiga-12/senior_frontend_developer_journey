@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 0;
+}
+
+body {
+  margin: 20vh auto;
+  width: 50%;
+  box-shadow:
+    2px 2px 2px grey,
+    -2px -2px 2px grey;
+  border-radius: 5px;
+}
+#profile-name {
+  font-size: 2rem;
+}
+#profile-role {
+  font-size: 1rem;
+  margin-top: 1vw;
+}
+#bio {
+  font-size: 0.8rem;
+  padding: 1vw 0;
+}
+#profile-image {
+  float: right;
+  padding: 1vw;
+}
+
+header,
+main,
+footer {
+  padding: 2vw;
+}
+#contact {
+  cursor: pointer;
+  font-size: 0.7rem;
+  background-color: rgb(144, 154, 240);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
