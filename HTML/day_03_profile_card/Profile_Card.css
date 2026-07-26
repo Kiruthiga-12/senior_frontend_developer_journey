@@ -4,14 +4,19 @@
   font-size: 16px;
   padding: 0;
 }
-
-body {
-  margin: 20vh auto;
-  width: 50%;
+body{
+  background-color:rgb(19, 31, 31);
+}
+.profile-card {
+  margin: 15vh auto;
+  max-width: 50%;
+  width:50%;
   box-shadow:
     2px 2px 2px grey,
     -2px -2px 2px grey;
   border-radius: 5px;
+  background-color: rgba(17, 186, 192, 0.76);
+  min-width:158px;
 }
 #profile-name {
   font-size: 2rem;
@@ -27,6 +32,10 @@ body {
 #profile-image {
   float: right;
   padding: 1vw;
+  max-width:250px;
+  max-height:250px;
+width:50%;
+height:50%;
 }
 
 header,
@@ -37,8 +46,9 @@ footer {
 #contact {
   cursor: pointer;
   font-size: 0.7rem;
-  background-color: rgb(144, 154, 240);
+  background-color: rgb(9, 10, 20);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
+  color:white;
 }
