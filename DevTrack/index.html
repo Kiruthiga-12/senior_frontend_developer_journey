@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>DevTrack</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="App to track developer learning progress"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header header-flex">
+      <button
+        aria-label="Main Menu"
+        style="
+          font-size: 30px;
+          color: whitesmoke;
+          background: none;
+          border: none;
+          cursor: pointer;
+        "
+      >
+        &#9776;
+      </button>
+      <h2>DevTrack</h2>
+      <p>Notification</p>
+      <p>Kiruthiga Natarajan</p>
+    </header>
+    <!--Sidebar/Main Content-->
+    <div class="flex body">
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Learning Path</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Goals</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Main body section-->
+      <div class="main-content">
+        <!-- Welcome Section-->
+        <section>
+          <h1>Welcome back, Kirthi 👋</h1>
+          <p>Track your progress and continue learning.</p>
+        </section>
+        <!-- Statistics Section-->
+        <section>
+          <h2>Statistics</h2>
+          <div class="statistics-card-flex">
+            <div class="statistics-card">
+              <h3>Topics Completed</h3>
+              <p>12</p>
+            </div>
+            <div class="statistics-card">
+              <h3>Overall Progress</h3>
+              <p>65%</p>
+            </div>
+            <div class="statistics-card">
+              <h3>Projects</h3>
+              <p>5</p>
+            </div>
+          </div>
+        </section>
+        <!-- Recent Learning Section-->
+        <section>
+          <h2>Recent Learning</h2>
+          <div class="learning-card-flex">
+            <div class="learning-card">
+              <h3>Responsive Web Design</h3>
+              <p>In Progress</p>
+            </div>
+            <div class="learning-card">
+              <h3>Flexbox</h3>
+              <p>Completed</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
