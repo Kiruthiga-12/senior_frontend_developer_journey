@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .flex {
@@ -25,9 +25,9 @@ body {
   justify-content: space-between;
 }
 .body {
-  width: 100%;
   background-image: linear-gradient(to right, lightblue, white, lightblue);
   margin: auto;
+  width: 100%;
 }
 
 .sidebar {
@@ -44,6 +44,8 @@ body {
 }
 .main-content {
   flex: 10;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .statistics-card,
@@ -51,7 +53,7 @@ body {
 .learning-overview-card {
   padding: 10px;
   border-radius: 5px;
-  width: 250px;
+  width: 25vw;
   text-align: center;
 }
 /* .statistics-card-flex, */
@@ -87,9 +89,43 @@ body {
 }
 
 /*mobile styling*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 699px) {
+  .main-content {
+    flex: 12;
+    border: 1px solid red;
+  }
   .sidebar {
     display: none;
+  }
+  .statistics-card,
+  .learning-card,
+  .learning-overview-card {
+    width: 45vw;
+  }
+  /* .statistics-card-flex, */
+  .learning-card-flex {
+    flex-direction: column;
+  }
+  .statistics-card-grid {
+    grid-template-columns: 0.4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 10px;
+  }
+  .overview-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 20px;
+  }
+}
+
+/*Tablet Styling*/
+@media screen and (min-width: 700px) and (max-width: 1020px) {
+  .statistics-card,
+  .learning-card,
+  .learning-overview-card {
+    width: 35vw;
   }
   /* .statistics-card-flex, */
   .learning-card-flex {
