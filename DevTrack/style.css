@@ -144,3 +144,13 @@ body {
     gap: 20px;
   }
 }
+
+#complete-topic-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
